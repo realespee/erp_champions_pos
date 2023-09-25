@@ -110,9 +110,10 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-#	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	# "ToDo": "custom_app.overrides.CustomToDo"
+    'Sales Invoice': 'erp_champions_pos.custom_script.overrides.custom_sales_invoice.CustomSalesInvoice'
+}
 
 # Document Events
 # ---------------
@@ -215,3 +216,16 @@ app_license = "MIT"
 # auth_hooks = [
 #	"erp_champions_pos.auth.validate"
 # ]
+
+fixtures = [
+    {
+		"dt": "Custom Field", "filters": [
+			[
+				"name", "in", [
+					"Custom Field-custom_sales_partner",
+                    "Custom Field-custom_commission_rate"
+				]
+			]
+		]
+	},
+]
