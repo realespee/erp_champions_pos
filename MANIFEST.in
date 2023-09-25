@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include erp_champions_pos *.css
+recursive-include erp_champions_pos *.csv
+recursive-include erp_champions_pos *.html
+recursive-include erp_champions_pos *.ico
+recursive-include erp_champions_pos *.js
+recursive-include erp_champions_pos *.json
+recursive-include erp_champions_pos *.md
+recursive-include erp_champions_pos *.png
+recursive-include erp_champions_pos *.py
+recursive-include erp_champions_pos *.svg
+recursive-include erp_champions_pos *.txt
+recursive-exclude erp_champions_pos *.pyc
