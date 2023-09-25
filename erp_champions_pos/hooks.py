@@ -218,12 +218,14 @@ override_doctype_class = {
 # ]
 
 fixtures = [
+    "Custom Field",
     {
-		"dt": "Custom Field", "filters": [
+		"dt": "POS Coupon", "filters": [
 			[
 				"name", "in", [
-					"Custom Field-custom_sales_partner",
-                    "Custom Field-custom_commission_rate"
+                    "POS Coupon-custom_sales_partner_details",
+					"POS Coupon-custom_sales_partner",
+                    "POS Coupon-custom_commission_rate"
 				]
 			]
 		]
